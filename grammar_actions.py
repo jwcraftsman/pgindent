@@ -12,7 +12,7 @@ def file(context, nodes):
 
 @action
 def expressions(context, nodes):
-    return nodes[0]
+    return nodes[1]
 
 @action
 def item(context, nodes):

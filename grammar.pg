@@ -1,7 +1,7 @@
 // Grammar definition
 
 file: expressions EOF;
-expressions: expression+[align];
+expressions: align? expression+[align] align?;
 expression: item+;
 item: block | word;
 block: indent expressions unindent;
